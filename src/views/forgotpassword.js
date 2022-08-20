@@ -1,12 +1,12 @@
 import React from 'react';
 import Logo from '../assets/logo1.png'
-import image1 from '../assets/1.png'
+import image1 from '../assets/4.png'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { Link } from 'react-router-dom'
 
 
 
-export const Login = () => {
+export const Forgotpassword = () => {
 
 
     const initialValues={
@@ -33,24 +33,19 @@ export const Login = () => {
 
                 <div className='lg:flex mt-14 md:mt-28 lg:mt-36 gap-20 justify-between items-center'>
                     <div className='lg:w-4/6'>
-                        <h1 className='text-5xl md:text-6xl lg:text-5xl text-rose-600 font-bold mb-2'>Welcome Back</h1>
-                        <p className=''>Sign in to continue</p>
+                        <h1 className='text-5xl md:text-6xl lg:text-5xl text-rose-600 font-bold mb-2'>Recovery Password</h1>
+                        <p className=''>Kindly input your email below to get the recovery link</p>
                         <Formik initialValues={initialValues}>
-                            <Form className='space-y-10 mt-16 lg:w-11/12'>
+                            <Form className='space-y-10 mt-8 xl:mt-16 lg:w-11/12'>
                                 <div>
-                                    <Field name="email" className="text-sm shadow-md shadow-slate-200 h-16 px-6 w-full lg:w-3/4 border border-slate-100 focus:outline-none" placeholder="Email Address" type="email" />
+                                    <Field name="email" className="text-sm shadow-md block shadow-slate-200 h-16 px-6 w-full lg:w-3/4 border border-slate-100 focus:outline-none" placeholder="Email Address" type="email" />
                                     <ErrorMessage name="email" component="span" className="text-red-500" />
-                                </div>
-
-                                <div>
-                                    <Field name="password" className="text-sm shadow-md block shadow-slate-200 h-16 px-6 w-full lg:w-3/4 border border-slate-100 focus:outline-none" placeholder="Password" type="password" />
-                                    <ErrorMessage name="password" component="span" className="text-red-500" />
-                                    <div className='text-right mt-8 w-full lg:w-3/4'>
-                                        <Link to="/forgot-password" className='font-semibold'>Forgot Password?</Link>
+                                    <div className='mt-8 w-full lg:w-3/4'>
+                                        <p className='font-light text-sm lg:text-base'>A recovery Link will be sent to your email, where you can reset your password.</p>
                                     </div>
                                 </div>
 
-                                <button type='submit' className='bg-teal-800 text-white px-28 shadow-lg font-bold py-5 rounded-full w-full lg:w-auto'>SIGN IN</button>
+                                <button type="submit" className='bg-teal-800 text-white px-28 shadow-lg font-bold py-5 rounded-full w-full lg:w-auto'>GET LINK</button>
 
                             </Form>
                         </Formik>
@@ -58,9 +53,7 @@ export const Login = () => {
 
 
                     <div className='mt-14 md:mt-20 lg:mt-0 w-full lg:w-3/6'>
-                        <h4 className='font-semibold text-3xl lg:text-2xl'>It's Good to Have You Back!</h4>
-                        <p className='text-yellow-600 lg:text-sm'>Lorem ipsum dolor sit amet consectetur</p>
-                        <img src={image1} alt="" className='lg:scale-125 mt-12 lg:mt-20' />
+                        <img src={image1} alt="" className='lg:scale-125 xl:scale-150 mt-12 ' />
                     </div>
                 </div>
 
