@@ -35,7 +35,7 @@ export const Verification = () => {
                     <div className='mt-14 md:mt-0'>
                         <div className='flex md:space-x-5 lg:space-x-10 justify-between lg:justify-start items-center'>
                             <p className='font-medium'>Have an Account?</p>
-                            <Link to="/signin" className='border-2 rounded-full px-6 py-3.5 md:w-52 lg:w-auto md:py-5 md:px-12 lg:px-16 font-bold bg-none shadow-xl border-yellow-600 hover:bg-teal-800 hover:border-teal-800 hover:text-white transition-colors'> SIGN IN</Link>
+                            <Link to="/login" className='border-2 rounded-full px-6 py-3.5 md:w-52 lg:w-auto md:py-5 md:px-12 lg:px-16 font-bold bg-none shadow-xl border-yellow-600 hover:bg-teal-800 hover:border-teal-800 hover:text-white transition-colors'> SIGN IN</Link>
                         </div>
                     </div>
                 </div>
