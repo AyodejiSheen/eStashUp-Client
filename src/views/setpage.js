@@ -40,7 +40,7 @@ export const SetPage = () => {
                                 you a variety of services at your
                                 finger tips always.</p>
                         </div>
-                        <button className='bg-teal-800 text-white px-8 md:px-28 shadow-lg font-bold py-5 rounded-full w-full lg:w-auto mt-14'>PROCEED TO DASHBAORD</button>
+                        <Link to="/dashboard"> <button className='bg-teal-800 text-white px-8 md:px-28 shadow-lg font-bold py-5 rounded-full w-full lg:w-auto mt-14'>PROCEED TO DASHBAORD</button> </Link>
                     </div>
 
 

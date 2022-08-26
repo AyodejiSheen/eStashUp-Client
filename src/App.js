@@ -13,6 +13,8 @@ import { Home } from './views/home';
 import { Verification } from './views/verification';
 import { Forgotpassword } from './views/forgotpassword';
 import { SetPage } from './views/setpage';
+import { Dashnav } from './views/dashnav';
+import { Dashboard } from './components/dashbaord/dashboard';
 
 
 
@@ -37,6 +39,12 @@ function App() {
         <Route path="verify-mail" element={<Verification/>}></Route>
         <Route path="forgot-password" element={<Forgotpassword/>}></Route>
         <Route path="activated" element={<SetPage/>}></Route>
+
+        <Route path="dashboard" element={<Dashnav/>}>
+            <Route index element={<Dashboard/>}></Route>
+        </Route>
+
+
       </Routes>
 
     </>
