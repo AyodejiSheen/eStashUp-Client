@@ -24,7 +24,7 @@ export const Dashnav = () => {
 
             <div>
                 <div className="lg:flex flex-wrap justify-between">
-                    <div className={`z-20 fixed transform h-full lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-scroll w-80 bg-teal-800 px-12 py-20 text-white space-y-16 md:space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
+                    <div className={`z-20 fixed transform h-full lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-scroll w-80 bg-teal-800 px-12 py-8 md:py-20 text-white space-y-16 md:space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
 
                         {/* hamburger close icon */}
                         <div onClick={toggleNav} className="lg:hidden ml-48">
@@ -36,7 +36,7 @@ export const Dashnav = () => {
                         <img src={Logo} className="hidden lg:block close" alt="" />
 
                         <div>
-                            <h5 className="mb-3 px-8">MENU</h5>
+                            <h5 className="mb-3 px-8">MENUS</h5>
                             <div className="space-y-3">
 
                                 <div className="">
