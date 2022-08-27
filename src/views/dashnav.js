@@ -103,7 +103,7 @@ export const Dashnav = () => {
                     </div>
 
 
-                    <div className="lg:ml-80 md:flex-1 w-full lg:py-8 lg:px-12 2xl:px-36 2xl:py-10 bg-slate-100 h-full">
+                    <div className="lg:ml-80 md:flex-1 w-full py-8 lg:py-8 lg:px-12 2xl:px-36 2xl:py-10 bg-slate-100 h-full">
                         <div className="flex flex-wrap items-center justify-between mx-8 lg:mr-0">
                             <div>
                                 <button onClick={toggleNav} className=" focus:border-2 p-1 mr-5 -ml-1 rounded-lg lg:hidden  focus:shadow-outline-purple">
@@ -132,10 +132,13 @@ export const Dashnav = () => {
                         <div className="px-8 lg:px-0 py-10 ">
                             <Outlet />
                         </div>
+                        <hr />
+                        <p className="text-xs text-center py-5">Designed by Adeyemi Ayodeji</p>
 
                     </div>
                 </div>
             </div>
+
 
         </>
     )

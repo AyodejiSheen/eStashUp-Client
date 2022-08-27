@@ -20,7 +20,7 @@ export const Dashboard = () => {
                                 <p className='text-sm md:text-base'>Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
                             </div>
                             <div className='mx-0 md:mx-8'>
-                                <Link to="#" className='bg-teal-800 text-white px-10 md:py-3 py-2 rounded-full hover:bg-white hover:text-teal-800 border-2 border-teal-800'>Create</Link>
+                                <Link to="#" className='bg-teal-800 text-white px-10 py-3 rounded-full hover:bg-white hover:text-teal-800 border-2 border-teal-800'>Create</Link>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export const Dashboard = () => {
 
             {/* section 2 */}
 
-            <div className='md:flex justify-between gap-16 mt-16'>
+            <div className='flex md:flex-row flex-col justify-between gap-16 mt-16'>
                 <div className='w-full md:w-2/3 space-y-12'>
                     <div>
                         <h3 className='mb-6 font-medium text-slate-700'>OVERVIEW</h3>
@@ -78,18 +78,21 @@ export const Dashboard = () => {
                         </div>
                     </div>
 
+
                     <div>
                         <h3 className='mb-6 font-medium text-slate-700'>EXPLORE EVENTS</h3>
-                        <div className='bg-white shadow-xl shadow-slate-200 rounded-3xl py-16'>
-                            <div className='px-8 flex items-center gap-10'>
+                        <div className='bg-white shadow-xl shadow-slate-200 rounded-3xl py-10 md:py-16'>
+                            <div className='px-8 flex items-center gap-6 md:gap-10'>
                                 <div><img src={box2} alt="" className='w-40' /></div>
-                                <div className=''>
-                                    <h2 className='font-semibold text-lg'>No available events</h2>
-                                    <p className='text-base'>There is no available events right now.</p>
-                                    <p className='text-base'>Take the lead. Create an event.</p>
-                                </div>
-                                <div className='mx-8'>
-                                    <Link to="#" className='bg-teal-800 text-white px-10 rounded-full py-3 hover:bg-white hover:text-teal-800 border-2 border-teal-800'>Create</Link>
+                                <div className='flex flex-col lg:flex-row md:items-center space-y-8 md:space-y-0  '>
+                                    <div className=''>
+                                        <h2 className='font-semibold text-lg'>No available events</h2>
+                                        <p className='text-sm md:text-base'>There is no available events right now.</p>
+                                        <p className='text-sm md:text-base'>Take the lead. Create an event.</p>
+                                    </div>
+                                    <div className='md:mx-8'>
+                                        <Link to="#" className='bg-teal-800 text-white px-10 rounded-full py-3 hover:bg-white hover:text-teal-800 border-2 border-teal-800'>Create</Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +100,7 @@ export const Dashboard = () => {
                 </div>
 
 
-                <div className='w-1/3'>
+                <div className='w-full md:w-1/3'>
                     <div className='flex flex-wrap justify-between mb-6'>
                         <h3 className='text-slate-700 font-medium'>YOUR GROUPS</h3>
                         <p className='text-slate-700 font-medium'>See all</p>
@@ -108,8 +111,8 @@ export const Dashboard = () => {
                             <div><img src={cuate} alt="" className='w-40 mx-auto mb-6' /></div>
                             <div className=''>
                                 <h2 className='font-semibold text-lg'>No events yet</h2>
-                                <p className='text-base'>There is no available events right now.</p>
-                                <p className='text-base'>Take the lead. Create an event.</p>
+                                <p className='text-sm md:text-base'>There is no available events right now.</p>
+                                <p className='text-sm md:text-base'>Take the lead. Create an event.</p>
                             </div>
                             <div className='mx-8 mt-8'>
                                 <Link to="#" className='bg-teal-800 text-white px-10 rounded-full py-3 hover:bg-white hover:text-teal-800 border-2 border-teal-800'>Explore</Link>
