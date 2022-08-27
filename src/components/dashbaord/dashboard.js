@@ -86,7 +86,7 @@ export const Dashboard = () => {
                                 <div><img src={box2} alt="" className='w-40' /></div>
                                 <div className='flex flex-col lg:flex-row md:items-center space-y-8 md:space-y-0  '>
                                     <div className=''>
-                                        <h2 className='font-semibold text-lg'>No available events</h2>
+                                        <h2 className='font-semibold text-lg mb-2 md:mb-0'>No available events</h2>
                                         <p className='text-sm md:text-base'>There is no available events right now.</p>
                                         <p className='text-sm md:text-base'>Take the lead. Create an event.</p>
                                     </div>

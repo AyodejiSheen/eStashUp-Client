@@ -24,7 +24,7 @@ export const Dashnav = () => {
 
             <div>
                 <div className="lg:flex flex-wrap justify-between">
-                    <div className={`z-20 fixed transform h-full lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-auto w-80 bg-teal-800 px-12 py-20 text-white space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
+                    <div className={`z-20 fixed transform h-full lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-auto w-80 bg-teal-800 px-12 py-20 text-white space-y-16 md:space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
 
                         {/* hamburger close icon */}
                         <div onClick={toggleNav} className="lg:hidden ml-48">
