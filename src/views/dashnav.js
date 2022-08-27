@@ -24,7 +24,7 @@ export const Dashnav = () => {
 
             <div>
                 <div className="lg:flex flex-wrap justify-between">
-                    <div className={`z-20 fixed transform h-screen lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-auto w-80 bg-teal-800 px-12 py-20 text-white space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
+                    <div className={`z-20 fixed transform h-full lg:translate-x-0 inset-y-0 left-0 transition duration-300 ease-in-out overflow-y-auto w-80 bg-teal-800 px-12 py-20 text-white space-y-24 ${mobileNav ? "translate-x-0" : "-translate-x-full"}`}>
 
                         {/* hamburger close icon */}
                         <div onClick={toggleNav} className="lg:hidden ml-48">
@@ -103,7 +103,7 @@ export const Dashnav = () => {
                     </div>
 
 
-                    <div className="lg:ml-80 md:flex-1 w-full py-8 lg:py-8 lg:px-12 2xl:px-36 2xl:py-10 bg-slate-100 h-full">
+                    <div className="lg:ml-80 md:flex-1 w-full lg:py-8 lg:px-12 2xl:px-36 2xl:py-10 bg-slate-100 h-full">
                         <div className="flex flex-wrap items-center justify-between mx-8 lg:mr-0">
                             <div>
                                 <button onClick={toggleNav} className=" focus:border-2 p-1 mr-5 -ml-1 rounded-lg lg:hidden  focus:shadow-outline-purple">
