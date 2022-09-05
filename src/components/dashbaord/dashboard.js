@@ -83,7 +83,7 @@ export const Dashboard = () => {
                         <div className='bg-white shadow-xl shadow-slate-200 rounded-3xl py-10 md:py-16'>
                             <div className='px-8 flex items-center gap-6 md:gap-10 '>
                                 <div><img src={box2} alt="" className='w-40' /></div>
-                                <div className='flex flex-col lg:flex-row lg:items-center space-y-8 lg:space-y-0 gap-6 md:gap-10'>
+                                <div className='flex flex-col lg:flex-row lg:items-center  lg:space-y-0 gap-6 lg:gap-10'>
                                     <div className=''>
                                         <h2 className='font-semibold text-lg mb-2 md:mb-0'>No available events</h2>
                                         <p className='text-sm lg:text-base'>There is no available events right now.</p>
